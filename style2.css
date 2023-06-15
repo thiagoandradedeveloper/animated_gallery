@@ -1,0 +1,36 @@
+.container, .item, .imgItem{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.imgItem{
+    position: relative;
+    width: 400px;
+    height: 300px;
+}
+.item{
+    position: relative;
+    height: 300px;
+    width: 50px;
+    border: thin solid black;
+    overflow: hidden;
+    transition: .7s;
+}
+.container{
+    position: relative;
+    height: 340px;
+    width: auto;
+    display: inline-flex;
+}
+.item:first-child{
+    width: 450px;
+}
+.item:last-child{
+    margin-right: 0px;
+}
+input[type="radio"]{
+    display: none;
+}
+input[type="radio"]:checked + .item{
+    width: 400px;
+}
